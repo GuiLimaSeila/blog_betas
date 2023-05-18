@@ -62,3 +62,9 @@ h3 {
 .p_image {
     text-align: center;
 }
+@media (max-width: 600px) {
+    #main_1 {
+        display:contents;
+        flex-direction: column;
+    }
+}
