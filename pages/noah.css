@@ -348,3 +348,5 @@ span {
     height: 700px;
     width: 500px;
 }
+@media (max-width: 600px) {
+}
