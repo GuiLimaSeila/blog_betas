@@ -343,3 +343,6 @@ span {
     font-size: 50px;
     margin-top: 750px;
 }
+
+@media (max-width: 600px) {
+}
