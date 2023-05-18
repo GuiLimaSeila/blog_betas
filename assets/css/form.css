@@ -6,6 +6,9 @@ body {
     text-align: center;
 
 }
+#titulo{
+    color: #76b900;
+}
 .imput{
     font-size: 20px;
     height: 100px;
@@ -55,4 +58,36 @@ body {
     left:0;
 
 }
-
+@media (max-width: 600px) {
+    #principa{
+        flex-direction: column;
+        
+        margin: 50px;
+    }
+    #all{
+        width: 20%;
+        flex-direction: column;
+        padding-bottom: 500px;
+    }
+    #principa{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 500px;
+        margin: 50px;
+    }
+    #dataput{
+        font-family: sans-serif;
+        color: #737374;
+    }
+    #descriput{
+        font-size: 20px;
+        height: 20%;
+        width: 20%;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #282424;
+        color: #FFFFFF;
+    }
+    
+}
