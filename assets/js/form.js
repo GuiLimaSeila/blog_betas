@@ -1,9 +1,14 @@
-var nome = document.getElementById("nomeput").innerHTML;
-var data = document.getElementById("dataput").innerHTML;
-var descri = document.getElementById("descriput").innerHTML;
+
+var nome = document.getElementById("nomeput");
+var data = document.getElementById("dataput");
+var descri = document.getElementById("descriput");
 var infos = [];
 
 function addComent(descri, data, nome){
-    
-    infos = nome, data, descri;
+    infos.push(nome)
+    infos.push(data)
+    infos.push(descri)
+
+    console.log(infos)
 }
+
