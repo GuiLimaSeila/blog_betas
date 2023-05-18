@@ -90,4 +90,12 @@ body {
 
 
 @media (max-width: 600px) {
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  }
 }
