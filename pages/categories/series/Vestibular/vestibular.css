@@ -10,7 +10,7 @@ div {
 #image1 {
     width: 100%;
     height: auto;
-    margin-top: -224px;
+    margin-top: 0;
 }
 #h1_título {
     text-align: center;
@@ -65,6 +65,8 @@ h3 {
 @media (max-width: 600px) {
     #main_1 {
         display:contents;
-        flex-direction: column;
+    }
+    iframe{
+        width: 200%;
     }
 }
