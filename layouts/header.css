@@ -88,6 +88,24 @@ body {
   padding: 10px;
 }
 
+nav home1{
+  margin: 0 10px;
+}
+nav sn1{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+nav feed1:hover{
+  color: #B6EADA;
+  transition: ease-in 0.2s;
+  background-color: #1d1a3e;
+  border-radius: 40px;
+}
+nav ctt1:active{
+  color: #B6EADA;
+}
 
 @media (max-width: 600px) {
   .logo {
@@ -105,10 +123,11 @@ body {
     color: var(--color-white);
     text-decoration: none;
     transition: all 0.3s;
+
   }
   .menu-bar ul li {
     /* width: 120px; */
-    padding: 0px 8px;
+    padding: 0px 13px;
     margin: 0%;
     border: 0;
     /* text-align: center; */
@@ -124,5 +143,14 @@ body {
     padding: 0 5%;
     position: relative;
   }
+
+    #sn1 {
+      display: none;
+    }
+    #feed1 {
+      display: none;
+    }
 }
+
+
 
