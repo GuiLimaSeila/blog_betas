@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 img {
     height: 190px;
     width: 235px;
@@ -50,4 +57,16 @@ h2 {
 a {
     text-decoration: none;
     color: white;
+}
+@media (max-width: 1000px) {
+    div {
+        display: contents;
+    }
+    h2 {
+        color: rgb(255, 244, 127);
+        font-size:40px;
+    }
+    h1 {
+        font-size:50px;
+    }
 }
