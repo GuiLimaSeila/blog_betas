@@ -341,5 +341,18 @@ span {
 #h2eqp{
     text-align: center;
     font-size: 50px;
-    margin-top: 750px;
+    margin-top: 600px;
+}
+
+
+@media (max-width:600px){
+    #space{
+        flex-direction: column;
+        height:100vh;
+    }
+    .space{
+
+        width: 100vw;
+    }
+    
 }
