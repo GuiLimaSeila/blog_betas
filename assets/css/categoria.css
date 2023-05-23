@@ -98,7 +98,6 @@ svg text {
 .p_image {
     text-align: center;
 }
-
 @media (max-width:600px) {
     body {
         font: size 18%; 
