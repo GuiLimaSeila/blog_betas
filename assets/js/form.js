@@ -49,26 +49,27 @@ function editar(){
     document.getElementById("comenput").value = arrayGeral[3];
     msg = ``;
 }
-function apagar(){
-    msg += `<div id="comentario">
-    <style>
-    #comentario{
-        display: none;
-    }
-    #comentarios{
-        display: none;
-    }
-    </style>
-    </div>`
-    arrayGeral.pop();
-    arrayGeral.pop();
-    arrayGeral.pop();
-    arrayGeral.pop();
-    document.getElementById("tituput").value = '';
-    document.getElementById("nomeput").value = '';
-    document.getElementById("dataput").value = '';
-    document.getElementById("comenput").value = '';
-}
+// function apagar(){
+//     msg = `<div id="comentario">
+//     <style>
+//     #comentario{
+//         display: none;
+//     }
+//     #comentarios{
+//         display: none;
+//     }
+//     </style>
+//     </div>`   
+//     document.getElementById("comentarios").innerHTML = msg;
+//     arrayGeral.pop();
+//     arrayGeral.pop();
+//     arrayGeral.pop();
+//     arrayGeral.pop();
+//     document.getElementById("tituput").value = '';
+//     document.getElementById("nomeput").value = '';
+//     document.getElementById("dataput").value = '';
+//     document.getElementById("comenput").value = '';
+// }
 
 
 
