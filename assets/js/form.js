@@ -50,7 +50,16 @@ function editar(){
     msg = ``;
 }
 function apagar(){
-    msg = "";
+    msg += `<div id="comentario">
+    <style>
+    #comentario{
+        display: none;
+    }
+    #comentarios{
+        display: none;
+    }
+    </style>
+    </div>`
     arrayGeral.pop();
     arrayGeral.pop();
     arrayGeral.pop();
