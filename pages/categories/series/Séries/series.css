@@ -113,3 +113,10 @@ main {
 #curb {
     color: #ffd85a;
 }
+
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+
+}
