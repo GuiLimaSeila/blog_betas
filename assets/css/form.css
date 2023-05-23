@@ -3,7 +3,6 @@ body {
     color: white;
     font-family: sans-serif;
 }
-
 #all {
     flex-wrap: wrap;
     display: flex;
@@ -15,15 +14,16 @@ body {
 /*inputs*/
 #nomeput{
     height: 30px;
-    width: 200px
+    width: 200px;
 }
 #dataput{
     height: 30px;
-    width: 200px
+    width: 200px;
 }
 #comenput{
-    height: 300px;
-    width: 500px
+    height: 200px;
+    width: 200%;
+    text-align: left;
 }
 .imput{
     border-radius: 30px;
@@ -45,6 +45,7 @@ body {
     background-color: #202020;
     border-radius: 36px;
     padding: 30px;
+    padding-right: 300px;
 }
 
 /*botão*/
@@ -72,4 +73,31 @@ body {
 
 .btn:active {
     opacity: 0.5;
+}
+/*responsividade*/
+@media(max-width: 728px){
+    #nomeput{
+        height: 30px;
+        width: 90%;
+    }
+    #dataput{
+        height: 30px;
+        width: 90%;
+    }
+    #comenput{
+        height: 300px;
+        width: 90%;
+    }
+    #principa {
+        background-color: #202020;
+        border-radius: 36px;
+        margin: 20px;
+        padding: 30px;
+        padding-bottom: 10px;
+    }
+    #principa2 {
+        background-color: #202020;
+        border-radius: 36px;
+        padding: 30px;
+    }
 }
