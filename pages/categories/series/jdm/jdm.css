@@ -171,7 +171,6 @@ h1{
 }
 
 #div1{
-    background-color:;
     width: 100%;
     height: 350px;
     border-radius: 20px;
@@ -210,6 +209,16 @@ img{
     margin-right: 140px;
 }
 
+.section_card{
+    font-size: 100px;
+    color: #ffffff;
+    background-color: #202020;
+    margin-bottom: 66px ;
+    display: flex;
+    margin-left: 100px;
+    padding: 40px;
+  }
+
 h3{
     margin-right: 8px;
 }
@@ -236,5 +245,12 @@ h2{
   a{
     text-decoration: none;
     padding: 10px;
+  }
+  @media (max-width: 1000px) {
+    #sectinflex{
+      display: contents;
+      margin-left: 140px;
+      margin-right: 140px;
+  }
   }
   
