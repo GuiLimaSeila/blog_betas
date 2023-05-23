@@ -75,3 +75,21 @@ h4{
     text-align: center;
     margin-left: 560px;
 }
+@media (max-width: 1000px) {
+    iframe{
+        width:155%;
+      }
+      #baner200 {
+        margin-bottom: 0;
+        width: 1505px;
+     
+    }
+    #h1_título {
+        text-align: center;
+        font-size: 70px;
+        margin-left: 500px;
+        margin-bottom: 77px;
+        color: #76b900;
+    
+    }
+}
