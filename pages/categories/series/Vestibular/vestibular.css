@@ -19,9 +19,6 @@ div {
     color: #76b900;
     
 }
-#main_1 {
-    display: flex;
-}
 .h2_subtitle {
     font-size: 29px;
     text-align: center;
@@ -61,12 +58,4 @@ h3 {
 }
 .p_image {
     text-align: center;
-}
-@media (max-width: 600px) {
-    #main_1 {
-        display:contents;
-    }
-    iframe{
-        width: 200%;
-    }
 }
