@@ -6,17 +6,7 @@ var data;
 var comen;
 var msg = "";
 
-function editar(){
-    document.getElementById("tituput").value = arrayGeral[0];
-    document.getElementById("nomeput").value = arrayGeral[1];
-    document.getElementById("dataput").value = arrayGeral[2];
-    document.getElementById("comenput").value = arrayGeral[3];
-    arrayGeral.pop()
-    arrayGeral.pop()
-    arrayGeral.pop()
-    arrayGeral.pop()
 
-}
 
 
 
@@ -42,14 +32,26 @@ function addComent() {
     <button type="button" class="btn2" onclick="editar()">[e]</button>
     <button type="button" class="btn2"onclick="apagar()">[d]</button>
     </div>`
-    
+
     document.getElementById("comentarios").innerHTML = msg
     }
     while (editar == false);
-    function apagar(){
-        msg = null
-    }
 }
+function editar(){
+    document.getElementById("tituput").value = arrayGeral[0];
+    arrayGeral.pop();
+    document.getElementById("nomeput").value = arrayGeral[1];
+    arrayGeral.pop();
+    document.getElementById("dataput").value = arrayGeral[2];
+    arrayGeral.pop();
+    document.getElementById("comenput").value = arrayGeral[3];
+    arrayGeral.pop();
+    
+}
+
+
+
+
 
 
 
