@@ -58,7 +58,7 @@ body {
 
 /*botões*/
 .btn {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     font-family: "Dosis", sans-serif;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 /*botao dnv*/
 .btn2 {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     font-family: "Dosis", sans-serif;
 }
 
