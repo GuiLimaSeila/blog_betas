@@ -74,6 +74,15 @@ body {
 .btn:active {
     opacity: 0.5;
 }
+/*comentario*/
+#comentario{
+    border-radius: 30px;
+    font-family: sans-serif;
+    padding: 15px;
+    background-color: #202020;
+    box-shadow: inset  5px 5px 5px #141414 ;
+    color: #818181;
+}
 /*responsividade*/
 @media(max-width: 728px){
     #nomeput{
