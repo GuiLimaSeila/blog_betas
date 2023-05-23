@@ -337,3 +337,97 @@ span {
     text-align: center;
     font-size: 50px;
 }
+@media (max-width: 1000px) {
+    #sectiontwo{
+        border-top: 10px;
+        height: 110px;
+        display: flex;
+        margin-left: 350px;
+        padding: 15px;
+        font-size: 30px;
+    }
+    h2{
+        text-align: center;
+        font-size: 100px;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 140%;
+        height: 450px;
+        overflow: hidden;
+        margin-top: -225px;
+    }
+    iframe{
+        width: 140%;
+        height: 400px;
+    }
+    .navegation-auto div {
+        border: 2px solid #76b900;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .navegation-auto {
+        position: absolute;
+        width: 140%;
+        margin-top: 410px;
+        display: flex;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        height: 500px;
+        margin: 50px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+    }
+    
+    .cardsimgs {
+        height: 500px;
+        width: 400px;
+        border-radius: 3px;
+        transition: .5s;
+    }
+    
+    .intro {
+        height: 70px;
+        width: 350px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -1630px;
+        background: rgb(27, 27, 27, .5);
+        transition: .5s;
+    }
+    
+    .h1card {
+        margin: 10px;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .pcard {
+        font-size: 20px;
+        margin: 2px;
+        color: white;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+    }
+    h2{
+        font-size: 100px;
+    }
+}
