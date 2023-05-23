@@ -344,6 +344,7 @@ span {
     margin-top: 750px;
 }
 
+
 @media (max-width:600px){
     #space{
         flex-direction: column;
@@ -355,3 +356,4 @@ span {
     }
     
 }
+

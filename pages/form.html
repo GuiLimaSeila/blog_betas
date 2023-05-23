@@ -11,20 +11,34 @@
 <body>
     <iframe src="../layouts/header.html"  frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
     <h1 id="titulo" class="titulos">Seus Posts</h1>
+    <div id="all1">
     <div id="all">
+            <!--div q engloba tudo 1-->
+        <!--div q engloba tudo 2-->
     <div id="principa">
+        <!--div que engloba 2 caixas-->
     <h1 class="titulos">Nome</h1>
     <input class="imput" type="text" id="nomeput" placeholder="Digite seu Nome">
     <h1 class="titulos">Data de publicação</h1>
     <input class="imput" type="date" id="dataput" >
-    <button type="button" id="envi" onclick="addComent()">Publicar</button>
     </div>
+    <!--fim da div q engloba 2 caixas-->
     <div id="principa2" >
+        <!--div que separa a parte de comentario-->
         <h1 class="titulos">Comente:</h1>
-        <input type="text" id="descriput"  placeholder="O que esta acontecendo?">
+        <input type="text" class="imput" id="comenput" placeholder="O que esta acontecendo?">
+        
     </div>
-    <button type="button" id="envi2" onclick="addComent()">Publicar</button>
 </div>
+    <!--butao-->
+    <div id="divdobotao">
+    <button type="button" class="btn" onclick="addComent()">Enviar</button>
+</div>
+</div>
+
+
+
+
 
     <iframe src="../layouts/footer.html" id="footerr" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
     
