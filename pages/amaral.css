@@ -343,6 +343,17 @@ span {
     font-size: 50px;
     margin-top: 750px;
 }
-@media (max-width: 600px) {
+
+
+@media (max-width:600px){
+    #space{
+        flex-direction: column;
+        height:100vh;
+    }
+    .space{
+
+        width: 100vw;
+    }
+    
 }
 
