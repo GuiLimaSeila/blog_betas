@@ -3,6 +3,8 @@ body{
    
     background-color: black;
     color: #ffffff;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 h1{
@@ -11,7 +13,6 @@ h1{
 }
 
 #div1{
-    background-color:;
     width: 100%;
     height: 350px;
     border-radius: 20px;
@@ -270,5 +271,62 @@ h1{
   a{
     text-decoration: none;
     padding: 10px;
+  }
+  @media (max-width: 1000px) {
+    iframe{
+      width:155%;
+    }
+    #sectinflex{
+      display: contents;
+      margin-left: 140px;
+      margin-right: 140px;
+  }
+  h2{
+  
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    font-family:sans-serif;
+    margin-left: 500px;
+}
+h1{
+    font-size: 100px;
+    margin-top: 200px;
+margin-left: 500px;
+}
+#gamesawar{
+  width: 1500px;
+  height: 400px;
+}
+.divs{
+  background-color: #202020;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  color: white;
+  margin-left: 15px;
+
+}
+.section_card{
+  font-size: 100px;
+  color: #ffffff;
+  background-color: #202020;
+  margin-bottom: 66px ;
+  display: flex;
+  margin-left: 100px;
+  padding: 40px;
+}
+h3{
+  margin-left: 500px;
+  font-size: 40px;
+}
+p {
+  font-size: 50px;
+  
+}
+#headerer{
+  height: 100px;
+}
   }
   
