@@ -355,7 +355,7 @@ span {
     }
     #footer{
         bottom: 0;
-        width: 100%;
+        width: 200%;
     }
     .container{
         display: flex;
@@ -369,4 +369,7 @@ span {
         display: flex;
         flex-direction: column-reverse;
     }
+#header{
+    width: 200%;
+}
 }
