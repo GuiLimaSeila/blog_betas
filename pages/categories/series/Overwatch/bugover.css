@@ -27,8 +27,7 @@ body{
 @media (max-width: 768px) {
 
     .article1{
-        font-size: 5%;
-        text-align: center;
+        margin-top: -100px;
     }
 
 }
