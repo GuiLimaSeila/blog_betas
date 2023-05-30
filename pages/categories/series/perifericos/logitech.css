@@ -68,7 +68,7 @@ h4{
 }
 
 #imgteclado{
-    margin-right: 500px;
+    margin-left: -700px;
 }
 
 #p_img{
@@ -81,15 +81,38 @@ h4{
       }
       #baner200 {
         margin-bottom: 0;
-        width: 1505px;
-     
+        width: 600px;
+        right: 800px;
     }
     #h1_título {
         text-align: center;
         font-size: 70px;
-        margin-left: 500px;
+        margin-left: 2px;
         margin-bottom: 77px;
         color: #76b900;
     
+    }
+    .p_img{
+        margin-right: 100px;
+    }
+
+    .imglog{
+        width: 500px;
+        height: 350px; 
+    }
+
+    #header1{
+        height: 90px;
+        width: 100%;
+    }
+
+    #footer1{
+        height: 400px;
+        width: 100%;
+    }
+
+    #imgteclado{
+        width: 500px;
+        height: 400px;
     }
 }

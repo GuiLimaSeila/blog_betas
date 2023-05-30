@@ -69,4 +69,17 @@ a {
     h1 {
         font-size:50px;
     }
+    #h11 {
+        font-size: 20px;
+        margin-top: -180px;
+    }
+    #hh {
+        margin-bottom: -3px;
+        margin-top: 40px;
+        font-size: 35px;
+    }
+    h2 {
+        color: rgb(255, 244, 127);
+        font-size: 30px;
+    }
 }
