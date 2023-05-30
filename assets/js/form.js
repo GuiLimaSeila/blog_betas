@@ -1,82 +1,91 @@
 
-var arrayGeral = [];
+
+var arrayTitulo = [];
+var arrayNome = [];
+var arrayData = [];
+var arrayComen = [];
 var titulo;
 var nome;
 var data;
 var comen;
-var msg = "";
+
 
 
 
 
 function addComent(titulo, nome, data, comen) {
-    arrayGeral.pop();
-    arrayGeral.pop();
-    arrayGeral.pop();
-    arrayGeral.pop();
 
-    do {
+
     /*0*/ titulo = document.getElementById("tituput").value;
-    arrayGeral.push(titulo)
+    arrayTitulo.push(titulo)
     document.getElementById("tituput").value = '';
     /*1*/ nome = document.getElementById("nomeput").value;
-    arrayGeral.push(nome)
+    arrayNome.push(nome)
     document.getElementById("nomeput").value = '';
     /*2*/ data = document.getElementById("dataput").value;
-    arrayGeral.push(data)
+    arrayData.push(data)
     document.getElementById("dataput").value = '';
     /*3*/ comen = document.getElementById("comenput").value;
-    arrayGeral.push(comen)
+    arrayComen.push(comen)
     document.getElementById("comenput").value = '';
+    let msg = "";
 
     //fazer um bloco de comentario
-    msg += `<div id="comentario">
-    <p id="titulo2">Titulo: ${arrayGeral[0]} </p>  </p>
-    <p id="titulo2">Nome: ${arrayGeral[1]} </p> </p>
-    <p id="titulo2">Data de publicação: ${arrayGeral[2]} </p> </p>
-    <p id="titulo2">Descrição:</p> ${arrayGeral[3]} </p> 
+    for (let i = 0; i < arrayTitulo.length && i < arrayNome.length && i < arrayData.length && i < arrayComen.length; i++) {
+        msg += `<div id="comentario">
+    <p id="titulo${i}">Titulo: ${arrayTitulo[i]} </p>  </p>
+    <p id="nome${i}">Nome: ${arrayNome[i]} </p> </p>
+    <p id="data${i}">Data de publicação: ${arrayData[i]} </p> </p>
+    <p id="descri${i}">Descrição:</p> ${arrayComen[i]} </p> 
     <button type="button" class="btn2" onclick="editar()">[e]</button>
     <button type="button" class="btn2"onclick="apagar()">[d]</button>
     </div>`
-    document.getElementById("comentarios").innerHTML = msg;
     }
-    while (editar , apagar == false);
+    document.getElementById("comentarios").innerHTML = msg;
 }
-function editar(){
-    document.getElementById("tituput").value = arrayGeral[0];
-    document.getElementById("nomeput").value = arrayGeral[1];
-    document.getElementById("dataput").value = arrayGeral[2];
-    document.getElementById("comenput").value = arrayGeral[3];
-    msg = ``;
+
+function editar() {
+
+    let i = 0;
+    let titulus = document.getElementById(`titulo${i}`).value;
+    let nomus = document.getElementById(`nome${i}`).value;
+    let datus = document.getElementById(`nome${i}`).value;
+    let comentus = document.getElementById(`nome${i}`).value;
+    while (titulus !== arrayTitulo[i] && nomus !== arrayNome[i] && datus !== arrayData[i] && comentus !== arrayComen[i]) 
+        document.getElementById("tituput").value = arrayTitulo[i];
+        document.getElementById("nomeput").value = arrayNome[i];
+        document.getElementById("dataput").value = arrayData[i];
+        document.getElementById("comenput").value = arrayComen[i];
+        i++
+
 }
-// function apagar(){
-//     msg = `<div id="comentario">
-//     <style>
-//     #comentario{
-//         display: none;
-//     }
-//     #comentarios{
-//         display: none;
-//     }
-//     </style>
-//     </div>`   
-//     document.getElementById("comentarios").innerHTML = msg;
-//     arrayGeral.pop();
-//     arrayGeral.pop();
-//     arrayGeral.pop();
-//     arrayGeral.pop();
-//     document.getElementById("tituput").value = '';
-//     document.getElementById("nomeput").value = '';
-//     document.getElementById("dataput").value = '';
-//     document.getElementById("comenput").value = '';
-// }
-
-
-
-
-
-
-
-
-
-
+function apagar() {
+    let msg ="";
+    let i = 0;
+    let titulus = document.getElementById(`titulo${i}`).value;
+    let nomus = document.getElementById(`nome${i}`).value;
+    let datus = document.getElementById(`nome${i}`).value;
+    let comentus = document.getElementById(`nome${i}`).value;
+    while (titulus !== arrayTitulo[i] && nomus !== arrayNome[i] && datus !== arrayData[i] && comentus !== arrayComen[i]) {
+        msg += `<style> #titulo${i}{
+    position:none ;
+    display:none ;
+}
+#nome${i}{
+    position:none ;
+    display:none ;
+}
+#data${i}{
+    position:none ;
+    display:none ;
+}
+#descri${i}{
+    position:none ;
+    display:none ;
+}
+</style>
+`
+        i++
+    }
+    document.getElementById("comentarios").innerHTML = msg;
+}
