@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -176,7 +180,6 @@ body {
     bottom: 100%;
   }
 }
-
 #botaoreal{
   background-color: #202020;
   color: #76b900;
@@ -193,9 +196,23 @@ body {
     0 0 50px #76b900,
     0 0 100px #76b900;
 }
-
-
-
-#footerIframe{
+#iframe_footer {
   margin-top: 400px;
+}
+@media (max-width: 1000px) {
+  #iframe_footer {
+    margin-top: 400px;
+  }
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #202020;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #202020;
+    border-radius: 10px;
+  }
 }
