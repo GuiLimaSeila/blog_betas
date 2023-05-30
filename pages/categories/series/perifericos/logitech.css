@@ -101,7 +101,13 @@ h4{
         height: 350px; 
     }
 
-    .header1{
-        
+    #header1{
+        height: 90px;
+        width: 100%;
+    }
+
+    #footer1{
+        height: 400px;
+        width: 100%;
     }
 }
