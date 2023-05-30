@@ -230,8 +230,8 @@ svg text {
 }
 
 .h1card {
-    margin: 6px;
-    font-size: 50px;
+    margin: 10px;
+    font-size: 40px;
     color: white;
 }
 
@@ -341,32 +341,18 @@ span {
 #h2eqp{
     text-align: center;
     font-size: 50px;
-    margin-top: 750px;
+    margin-top: 600px;
 }
 
-#lm {
-    height: 700px;
-    width: 500px;
-}
-footer {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 0;
-    border: 0;
-    margin-top: 30px;
-    width: 1000%;
-  
-}
 
-#sing {
-    height: 146%;
-    width: 146%;
-}
-#dance {
-    height: 146%;
-    width: 146%;
-}
-#cook {
-    height: 146%;
-    width: 146%;
+@media (max-width:600px){
+    #space{
+        flex-direction: column;
+        height:100vh;
+    }
+    .space{
+
+        width: 100vw;
+    }
+    
 }
