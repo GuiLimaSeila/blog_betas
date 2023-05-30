@@ -341,12 +341,48 @@ span {
 #h2eqp{
     text-align: center;
     font-size: 50px;
-    margin-top: 750px;
+    margin-top: 600px;
 }
 
-#lm {
-    height: 700px;
-    width: 500px;
-}
-@media (max-width: 600px) {
+
+@media (max-width:1000px){
+    #space{
+        flex-direction: column;
+        height:100vh;
+    }
+    .space{
+
+        width: 100vw;
+    }
+    #sectinflex{
+        display: contents;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    .slides {
+        width: 400%;
+        height: 450px;
+        display: contents;
+    }
+    .navegation-auto {
+        position: absolute;
+        width: 100%;
+        margin-top: -1010px;
+        display: contents;
+        justify-content: center;
+    }
+    .container {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .container2 {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+   
+
+
+
 }
