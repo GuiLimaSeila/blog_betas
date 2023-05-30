@@ -108,12 +108,12 @@ svg text {
 
 
 @media (max-width: 1000px) {
-    
-    #bla {
-        width: 89%;
-        height: 95%;
-        }
-        #foot {
-        width: 160%;
-}
+    #brasilescola{
+        width: 260%;
+    }
+    #foot{
+        width: 260%;
+        height:360px;
+    }
+
 }
