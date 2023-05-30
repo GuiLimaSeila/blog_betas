@@ -12,6 +12,7 @@ body{
 #sectiontwo{
     border-top: 10px;
     height: 110px;
+    display: flex;
     margin-left: 350px;
     margin-right: 200px;
     padding: 15px;
@@ -24,6 +25,7 @@ body{
     font-size: x-large;
 }
 #sectinflex{
+    display: flex;
     margin-left: 140px;
     margin-right: 140px;
 }
@@ -99,7 +101,7 @@ svg text {
 .slides {
     width: 400%;
     height: 450px;
- 
+    display: flex;
 }
 
 .slides input {
@@ -119,6 +121,7 @@ svg text {
     position: relative;
     width: 100%;
     margin-top: -40px;
+    display: flex;
     justify-content: center;
 }
 
@@ -166,6 +169,7 @@ svg text {
     position: absolute;
     width: 100%;
     margin-top: 410px;
+    display: flex;
     justify-content: center;
 }
 
@@ -195,6 +199,7 @@ svg text {
 /*Final card 1 */
 
 .container {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -265,6 +270,7 @@ span {
 
 /*Começo Card 2 */
 .container2 {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -339,7 +345,7 @@ span {
 }
 
 
-@media (max-width:600px){
+@media (max-width:1000px){
     #space{
         flex-direction: column;
         height:100vh;
@@ -348,5 +354,35 @@ span {
 
         width: 100vw;
     }
-    
+    #sectinflex{
+        display: contents;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    .slides {
+        width: 400%;
+        height: 450px;
+        display: contents;
+    }
+    .navegation-auto {
+        position: absolute;
+        width: 100%;
+        margin-top: 410px;
+        display: contents;
+        justify-content: center;
+    }
+    .container {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .container2 {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+   
+
+
+
 }
