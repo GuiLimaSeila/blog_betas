@@ -358,6 +358,14 @@ footer {
 }
 
 
-@media (max-width: 768vh) {
+@media (max-width:600px){
+    #space{
+        flex-direction: column;
+        height:100vh;
+    }
+    .space{
 
+        width: 100vw;
+    }
+    
 }
