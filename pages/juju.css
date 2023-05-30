@@ -217,7 +217,6 @@ svg text {
     border-radius: 3px;
     transition: .5s;
 }
-
 .intro {
     height: 70px;
     width: 350px;
@@ -345,7 +344,7 @@ span {
 }
 
 
-@media (max-width:600px){
+@media (max-width:1000px){
     #space{
         flex-direction: column;
         height:100vh;
@@ -354,5 +353,20 @@ span {
 
         width: 100vw;
     }
-    
+    #footer{
+        bottom: 0;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardsimgs{
+        height: 1200px;
+        width: 800px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
