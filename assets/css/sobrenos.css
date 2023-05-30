@@ -43,7 +43,9 @@ aside {
 
 #sobrenos {
     display: flex;
+    font-size: 100px;
 }
+    
 
 article {
     margin-right: 100px;
@@ -67,8 +69,8 @@ article {
 }
 
 .cardsimgs {
-    height: 500px;
-    width: 350px;
+    height: 600px;
+    width: 400px;
     border-radius: 3px;
     transition: .5s;
 }
@@ -139,8 +141,8 @@ span {
 }
 
 .cardsimgs2 {
-    height: 500px;
-    width: 350px;
+    height: 600px;
+    width: 400px;
     border-radius: 3px;
     transition: .5s;
 }
