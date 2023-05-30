@@ -66,3 +66,10 @@ box-shadow: 5px 5px #76b900;
     background-color: #202020;
     box-shadow: 5px 5px #76b900;
 }
+
+@media (max-width: 768vh){
+    .slider{
+        text-align: center;
+    }
+}
+
