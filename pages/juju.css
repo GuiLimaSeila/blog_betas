@@ -362,12 +362,11 @@ span {
         flex-direction: column;
     }
     .cardsimgs{
-        height: 1200px;
-        width: 800px;
+        height: 100%;
+        width: 100%;
     }
-    .intro{
-        display: flex;
-        flex-direction: column-reverse;
+    #coisa1{
+        margin-top: 50px;
     }
 #header{
     width: 200%;
