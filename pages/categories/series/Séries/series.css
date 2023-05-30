@@ -113,3 +113,25 @@ main {
 #curb {
     color: #ffd85a;
 }
+@media (max-width: 1000px) {
+    #div1 {
+        display: contents;
+    }
+    #div2 {
+        display: contents;
+    }
+    #curb {
+        color: #ffd85a;
+        font-size: 20px;
+    }
+    #sec1{
+        margin-left: 65px;
+    }
+    #sec2{
+        margin-left: 65px;
+    }
+    #dj {
+        color: rgb(184, 7, 184);
+        font-size: 20px;
+    }
+}
