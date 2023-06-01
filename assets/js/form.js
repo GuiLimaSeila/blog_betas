@@ -28,12 +28,12 @@ function create(){
     atualizarListaTela();
 }
 function atualizarListaTela(){
-    for(let i = 0; i < arrayGeral.length; i++){
+    for(let i = 0; i < arrayGlobal.length; i++){
     msg += `<div id="comentario">
-    <p id="titulo">Titulo: ${arrayComents[i]} </p>  
-    <p id="nome">Nome: ${arrayComents[i]} </p> 
-    <p id="data">Data de publicação: ${arrayComents[i]} </p> 
-    <p id="descri">Descrição: ${arrayComents[i]} </p> 
+    <p id="titulo">Titulo: ${arrayComents[0]} </p>  
+    <p id="nome">Nome: ${arrayComents[1]} </p> 
+    <p id="data">Data de publicação: ${arrayComents[2]} </p> 
+    <p id="descri">Descrição: ${arrayComents[3]} </p> 
     <button type="button" class="btn2" onclick="editar()">[e]</button>
     <button type="button" class="btn2"onclick="apagar()">[d]</button>
     </div>`
@@ -44,10 +44,9 @@ function atualizarListaTela(){
 function apagar(){
     for(let i = 0; i < arrayGlobal.length; i++){
     msg = arrayGlobal.splice(i, 0)
-    arrayComents = [];
-    arrayGeral = [];
-    document.getElementById("comentarios").innerHTML = arrayComents[i];
+
 }
+document.getElementById("comentarios").innerHTML = msg
 arrayComents = [];
 arrayGeral = [];
 }
