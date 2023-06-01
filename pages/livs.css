@@ -217,7 +217,6 @@ svg text {
     border-radius: 3px;
     transition: .5s;
 }
-
 .intro {
     height: 70px;
     width: 350px;
@@ -354,35 +353,22 @@ span {
 
         width: 100vw;
     }
-    #sectinflex{
-        display: contents;
-        margin-left: 140px;
-        margin-right: 140px;
+    #footer{
+        bottom: 0;
+        width: 200%;
     }
-    .slides {
-        width: 400%;
-        height: 450px;
-        display: contents;
+    .container{
+        display: flex;
+        flex-direction: column;
     }
-    .navegation-auto {
-        position: absolute;
+    .cardsimgs{
+        height: 100%;
         width: 100%;
-        margin-top: -1010px;
-        display: contents;
-        justify-content: center;
     }
-    .container {
-        display: contents;
-        align-items: center;
-        justify-content: center;
+    #coisa1{
+        margin-top: 50px;
     }
-    .container2 {
-        display: contents;
-        align-items: center;
-        justify-content: center;
-    }
-   
-
-
-
+#header{
+    width: 200%;
+}
 }
