@@ -65,3 +65,36 @@ div {
 .p_image {
     text-align: center;
 }
+@media (max-width: 1000px) {
+    #main_1 {
+        display: contents;
+    }
+    #main_2 {
+        display: contents;
+    }
+    #img_1 {
+        width: 250px;
+        height: auto;
+    }
+    #img_2 {
+        width: 250px;
+        height: auto;
+    }
+    #img_3 {
+        width: 250px;
+        height: auto;
+    }
+    #img_4 {
+        width: 250px;
+        height: auto;
+    }
+    #img_5 {
+        width: 250px;
+        height: auto;
+    }
+    #img_banner {
+        margin-top: -200px;
+        height: auto;
+        width: 360px;
+    }
+}
