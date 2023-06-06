@@ -379,12 +379,13 @@ span {
     }
     .card:hover .intro {
         height: 180px;
+        width: 300px;
         bottom: auto;
         background-color: #202020;
     }
     #lm {
         width: 70vw;
-padding-left: 55%;
+padding-left: 15%;
     }
     #h2eqp{
         text-align: center;
@@ -413,5 +414,8 @@ padding-left: 55%;
         display: flex;
         justify-content: center;
     }
-
+#space{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 }

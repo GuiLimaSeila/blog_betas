@@ -360,3 +360,74 @@ svg text {
 }
 
 /*Carrossel Fim */
+@media (max-width: 1000px) {
+    p{
+        font-size: 20px;
+    }
+    #sectionone {
+        width: 100%;
+        height: 100%;
+        justify-content:none;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .container {
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro {
+        height: 70px;
+        width: 350px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom:auto;
+        background: rgb(27, 27, 27, .5);
+        transition: .5s;
+
+    }
+    .card{
+        margin-top: 200px;
+    }
+    .card:hover .intro {
+        height: 180px;
+        bottom: auto;
+        background-color: #202020;
+    }
+    #sobrenos {
+        display: contents;
+        font-size: 50px;
+    }
+    #section-3 {
+        font-size: 10px;
+    }
+    #h2eqp{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 150px;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 80%;
+        height: 450px;
+        overflow: hidden;
+        margin-top: -225px;
+    }
+    .navegation-auto div {
+        border: 2px solid #76b900;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .navegation-auto {
+        position: absolute;
+        width: 80%;
+        margin-top: 410px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
