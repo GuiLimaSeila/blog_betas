@@ -49,10 +49,6 @@ function atualizarListaTela() {
 
 
 function apagar(i) {
-  for (let i = 0; i < arrayGeral.length; i++) {
-    msg = arrayGeral.splice(i, 0);
-    console.log(arrayGeral)
-  }
-  document.getElementById("comentarios").innerHTML = msg;
+    msg = arrayGeral.splice(i, 1);
   atualizarListaTela()
 }
