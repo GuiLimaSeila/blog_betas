@@ -55,17 +55,8 @@ article {
 
 /*Final card 1 */
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card {
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
+p{
+    color: whitesmoke;
 }
 
 .cardsimgs {
@@ -73,6 +64,7 @@ article {
     width: 400px;
     border-radius: 3px;
     transition: .5s;
+    padding-left: 40%;
 }
 
 .intro {
@@ -93,58 +85,22 @@ article {
     text-decoration: none;
 }
 
-.pcard {
-    font-size: 20px;
-    margin: 10px;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-}
 
 span {
     font-weight: bold;
 }
 
-.card:hover {
-    cursor: pointer;
-}
-
-.card:hover .intro {
-    height: 220px;
-    bottom: -1221px;
-    background-color: #202020;
-}
-
-.card:hover .pcard {
-    opacity: 1;
-    visibility: visible;
-}
-
-.card:hover .cardsimgs {
-    transform: scale(1.1) rotate(-3deg);
-}
-
 /*Final card 1 */
 
 /*Começo Card 2 */
-.container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.card2 {
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
 
 .cardsimgs2 {
     height: 600px;
     width: 400px;
     border-radius: 3px;
     transition: .5s;
+    padding-left: 40%;
 }
 
 .intro2 {
@@ -164,36 +120,13 @@ span {
     color: white;
 }
 
-.pcard2 {
-    font-size: 20px;
-    margin: 10px;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-}
+
 
 span {
     font-weight: bold;
 }
 
-.card2:hover {
-    cursor: pointer;
-}
 
-.card2:hover .intro2 {
-    height: 220px;
-    bottom: -1821px;
-    background-color: #202020;
-}
-
-.card2:hover .pcard2 {
-    opacity: 1;
-    visibility: visible;
-}
-
-.card2:hover .cardsimgs2 {
-    transform: scale(1.1) rotate(-3deg);
-}
 
 /*Final card 2 */
 
@@ -358,9 +291,26 @@ svg text {
 #radio4:checked~.navegation-auto .auto-btn4 {
     background-color: white;
 }
-
+a{
+    text-decoration: none;
+}
 /*Carrossel Fim */
 @media (max-width: 1000px) {
+    .cardsimgs2 {
+        height: 300px;
+        width: 200px;
+        border-radius: 3px;
+        transition: .5s;
+        padding-left: 30%;
+    }
+    .cardsimgs {
+        height: 300px;
+        width: 200px;
+        border-radius: 3px;
+        transition: .5s;
+        padding-left: 30%;
+    }
+    
     p{
         font-size: 20px;
     }
@@ -371,41 +321,12 @@ svg text {
         margin-left: 0;
         font-size: 20px;
     }
-    .container {
-        display: contents;
-        align-items: center;
-        justify-content: center;
-    }
-    .intro {
-        height: 70px;
-        width: 350px;
-        padding: 6px;
-        box-sizing: border-box;
-        position: absolute;
-        bottom:auto;
-        background: rgb(27, 27, 27, .5);
-        transition: .5s;
-
-    }
-    .card{
-        margin-top: 200px;
-    }
-    .card:hover .intro {
-        height: 180px;
-        bottom: auto;
-        background-color: #202020;
-    }
     #sobrenos {
         display: contents;
         font-size: 50px;
     }
     #section-3 {
         font-size: 10px;
-    }
-    #h2eqp{
-        text-align: center;
-        font-size: 50px;
-        margin-top: 150px;
     }
     .slider {
         margin: 0 auto;
