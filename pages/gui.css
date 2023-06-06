@@ -348,6 +348,9 @@ span {
     width: 500px;
 }
 @media (max-width: 1000px) {
+    p{
+        font-size: 20px;
+    }
     #sectiontwo{
         border-top: 10px;
         height: 110px;
@@ -382,14 +385,35 @@ span {
         background-color: #202020;
     }
     #lm {
-        height: 700px;
-        width: 500px;
-        padding-left: 59vw;
+        width: 70vw;
+padding-left: 55%;
     }
     #h2eqp{
         text-align: center;
         font-size: 50px;
         margin-top: 150px;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 80%;
+        height: 450px;
+        overflow: hidden;
+        margin-top: -225px;
+    }
+    .navegation-auto div {
+        border: 2px solid #76b900;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .navegation-auto {
+        position: absolute;
+        width: 80%;
+        margin-top: 410px;
+        display: flex;
+        justify-content: center;
     }
 
 }
