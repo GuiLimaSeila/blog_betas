@@ -39,6 +39,10 @@ body {
     box-shadow: inset  5px 5px 5px #141414 ;
     color: #818181;
 }
+#descriput{
+    width: 160%;
+    height: 100px;
+}
 #principa {
     background-color: #202020;
     border-radius: 36px;

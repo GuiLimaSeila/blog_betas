@@ -35,8 +35,8 @@ function atualizarListaTela() {
     <li id="nome">Nome: ${tarefa[1]} </li> 
     <li id="data">Data de publicação: ${tarefa[2]} </li> 
     <li id="descri">Descrição: ${tarefa[3]} </li> 
-    <button type="button" class="btn2" onclick="editar()">[e]</button>
-    <button type="button" class="btn2"onclick="apagar(${i})">[d]</button>
+    <button type="button" class="btn2" onclick="editar()">Editar</button>
+    <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
 
@@ -51,4 +51,11 @@ function atualizarListaTela() {
 function apagar(i) {
     msg = arrayGeral.splice(i, 1);
   atualizarListaTela()
+}
+function editar(){
+
+  artigo[0] = document.getElementById("tituput").value;
+  artigo[1]= document.getElementById("nomeput").value;
+  artigo[2] = document.getElementById("dataput").value;
+  artigo[3] = document.getElementById("descriput").value;
 }
