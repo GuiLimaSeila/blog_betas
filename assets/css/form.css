@@ -149,6 +149,10 @@ body {
         border-radius: 36px;
         padding: 30px;
         margin: 20px;
-        padding-right: 100px;
+        padding-right: 50px;
+    }
+    #descriput{
+        width: 100%;
+        height: 100px;
     }
 }
