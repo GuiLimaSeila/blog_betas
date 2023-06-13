@@ -89,6 +89,7 @@ function atualizarEdit() {
   msg = "";
   for (let i = 0; i < arrayGeral.length; i++) {
     console.log(i);
+  
     tarefa = arrayGeral[i];
     msg += `<div id="comentario">
     <p id="titulo">Titulo: ${tarefa[0]} </p>  
@@ -100,5 +101,6 @@ function atualizarEdit() {
     <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
+  document.getElementById("comentario").innerHTML = msg;
 }
 
