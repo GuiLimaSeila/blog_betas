@@ -1,5 +1,4 @@
 var arrayGeral = [];
-var arrayGlobal = [];
 var arrayComents = [];
 var titulo;
 var nome;
@@ -7,47 +6,49 @@ var data;
 var descri;
 var msg = "";
 
-function create(){
-    /*0*/titulo = document.getElementById("tituput").value ; 
-    document.getElementById("tituput").value = '';
-    /*1*/nome = document.getElementById("nomeput").value ;
-    document.getElementById("nomeput").value = '';
-    /*2*/data = document.getElementById("dataput").value ;
-    document.getElementById("dataput").value = '';
-    /*3*/descri = document.getElementById("descriput").value;
-    document.getElementById("descriput").value = '';
-    //
-    arrayComents.push(titulo);
-    arrayComents.push(nome);
-    arrayComents.push(data);
-    arrayComents.push(descri);
-    // jogar num array geral
-    arrayGeral.push(arrayComents);
-    arrayGlobal.push(arrayGeral);
+function create() {
+  /*0*/ titulo = document.getElementById("tituput").value;
+  document.getElementById("tituput").value = "";
+  /*1*/ nome = document.getElementById("nomeput").value;
+  document.getElementById("nomeput").value = "";
+  /*2*/ data = document.getElementById("dataput").value;
+  document.getElementById("dataput").value = "";
+  /*3*/ descri = document.getElementById("descriput").value;
+  document.getElementById("descriput").value = "";
+  //
 
-    atualizarListaTela();
+  const artigo = [titulo, nome, data, descri]
+  arrayGeral.push(artigo);
+
+  
+  // jogar num array geral
+  //arrayGeral.push(arrayComents);
+  atualizarListaTela();
 }
-function atualizarListaTela(){
-    for(let i = 0; i < arrayGeral.length; i++){
+function atualizarListaTela() {
+    let msg = "";
+  for (let i = 0; i < arrayGeral.length; i++) {
+    console.log(i);
+    let tarefa = arrayGeral[i];
     msg += `<div id="comentario">
-    <p id="titulo">Titulo: ${arrayComents[i]} </p>  
-    <p id="nome">Nome: ${arrayComents[i]} </p> 
-    <p id="data">Data de publicação: ${arrayComents[i]} </p> 
-    <p id="descri">Descrição: ${arrayComents[i]} </p> 
+    <li id="titulo">Titulo: ${tarefa[0]} </li>  
+    <li id="nome">Nome: ${tarefa[1]} </li> 
+    <li id="data">Data de publicação: ${tarefa[2]} </li> 
+    <li id="descri">Descrição: ${tarefa[3]} </li> 
     <button type="button" class="btn2" onclick="editar()">[e]</button>
-    <button type="button" class="btn2"onclick="apagar()">[d]</button>
-    </div>`
-    }
-    document.getElementById("comentarios").innerHTML = msg
+    <button type="button" class="btn2"onclick="apagar(${i})">[d]</button>
+    </div>`;
+  }
+
+  document.getElementById("comentarios").innerHTML = msg;
+  // arrayComents.pop()
+  // arrayComents.pop()
+  // arrayComents.pop()
+  // arrayComents.pop()
 }
 
-function apagar(){
-    for(let i = 0; i < arrayGlobal.length; i++){
-    msg = arrayGlobal.splice(i, 0)
-    arrayComents = [];
-    arrayGeral = [];
-    document.getElementById("comentarios").innerHTML = arrayComents[i];
-}
-arrayComents = [];
-arrayGeral = [];
+
+function apagar(i) {
+    msg = arrayGeral.splice(i, 1);
+  atualizarListaTela()
 }

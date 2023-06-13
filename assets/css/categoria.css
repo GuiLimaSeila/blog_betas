@@ -76,7 +76,7 @@ svg text {
 }
 .sections {
     background-color: #101010;
-    margin-left: 250px;
+    margin-left: 350px;
 }
 .p_text {
     font-size: 18px;
@@ -89,6 +89,7 @@ svg text {
     height: auto;
     border-radius: 10px;
 }
+
 #img_2 {
     width: 250px;
     height: auto;
@@ -109,11 +110,19 @@ svg text {
 
 @media (max-width: 1000px) {
     #brasilescola{
-        width: 260%;
+        width: 100%;
     }
     #foot{
-        width: 260%;
-        height:360px;
+        width: 100%;
+
+    }
+    #main_2 {
+        display: contents;
+    
+    }
+    .sections {
+        background-color: #101010;
+        margin-left: 0px;
     }
 
 }
