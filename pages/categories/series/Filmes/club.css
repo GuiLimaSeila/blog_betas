@@ -131,3 +131,35 @@ width: 20%;
     background-color: rgb(184, 7, 184);
     height: auto;
 }
+@media (max-width: 1000px) {
+    #noah {
+        display: contents;
+     }
+     #div1 {
+        display: contents;
+     }
+     p {
+        text-align: center;
+        align-items: center;
+        background-image:none;
+        margin-left: -80px;
+
+    }
+    video {
+        height: 290px;
+        width: 300px;
+    }
+    #diiii {
+display: none
+    }
+    #h333 {
+        color: #ffffff;
+        width: 400px;
+        margin-left: 0px;
+        text-align: justify;
+     }
+     #lala {
+        display: flex;
+        margin-left: 10%;
+     }
+}
