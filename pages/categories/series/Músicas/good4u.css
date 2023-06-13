@@ -20,7 +20,7 @@ div {
     
 }
 #main_1 {
-    display: flex;
+    display: contents;
 }
 .h2_subtitle {
     font-size: 25px;
@@ -58,4 +58,23 @@ div {
 }
 .p_image {
     text-align: center;
+}
+@media (max-width: 1000px) {
+    #img_1 {
+        width: 250px;
+        height: auto;
+    }
+    video{
+        width: 360px;
+        height: auto;
+        padding-left: 12px;
+    }
+    .p_music {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

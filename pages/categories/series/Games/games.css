@@ -65,3 +65,30 @@ div {
 .p_image {
     text-align: center;
 }
+@media (max-width: 1000px) {
+    #main_1{
+        flex-direction: column;
+    }
+    #main_2{
+        flex-direction: column;
+    }
+    #img_banner{
+        width: 100vw;
+        height: 40vh;
+    }
+    #img_1{
+        width: 100vw;
+        height: 40vh;
+    }
+    #img_2{
+        width: 100vw;
+        height: 40vh;
+    }
+    #img_5{
+        width: 100vw;
+        height: 40vh;
+    }
+    #p_text{
+        text-align: left;
+    }
+    }

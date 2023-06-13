@@ -16,13 +16,13 @@ function create() {
   /*3*/ descri = document.getElementById("descriput").value;
   document.getElementById("descriput").value = "";
   //
-  arrayComents.push(titulo);
-  arrayComents.push(nome);
-  arrayComents.push(data);
-  arrayComents.push(descri);
+
+  const artigo = [titulo, nome, data, descri]
+  arrayGeral.push(artigo);
+
   
   // jogar num array geral
-  arrayGeral.push(arrayComents);
+  //arrayGeral.push(arrayComents);
   atualizarListaTela();
 }
 function atualizarListaTela() {
@@ -35,22 +35,27 @@ function atualizarListaTela() {
     <li id="nome">Nome: ${tarefa[1]} </li> 
     <li id="data">Data de publicação: ${tarefa[2]} </li> 
     <li id="descri">Descrição: ${tarefa[3]} </li> 
-    <button type="button" class="btn2" onclick="editar()">[e]</button>
-    <button type="button" class="btn2"onclick="apagar()">[d]</button>
+    <button type="button" class="btn2" onclick="editar()">Editar</button>
+    <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
 
   document.getElementById("comentarios").innerHTML = msg;
-  arrayComents.pop()
-  arrayComents.pop()
-  arrayComents.pop()
-  arrayComents.pop()
+  // arrayComents.pop()
+  // arrayComents.pop()
+  // arrayComents.pop()
+  // arrayComents.pop()
 }
 
 
-function apagar() {
-  for (let i = 0; i < arrayGeral.length; i++) {
-    msg = arrayGeral.splice(i, 0);
-  }
-  document.getElementById("comentarios").innerHTML = msg;
+function apagar(i) {
+    msg = arrayGeral.splice(i, 1);
+  atualizarListaTela()
+}
+function editar(){
+
+  artigo[0] = document.getElementById("tituput").value;
+  artigo[1]= document.getElementById("nomeput").value;
+  artigo[2] = document.getElementById("dataput").value;
+  artigo[3] = document.getElementById("descriput").value;
 }
