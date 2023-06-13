@@ -87,4 +87,12 @@ a {
         color: rgb(127, 255, 159);
         font-size: 30px;
     }
+    .geral2{
+        display: flex;
+        flex-direction: column;
+    }
+    #geral{
+        align-items: center;
+        display: contents;
+    }
 }
