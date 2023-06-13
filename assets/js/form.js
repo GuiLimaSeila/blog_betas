@@ -5,8 +5,10 @@ var nome;
 var data;
 var descri;
 var msg = "";
+var indice = -1;
 
 function create() {
+  if (indice < 0){
   /*0*/ titulo = document.getElementById("tituput").value;
   document.getElementById("tituput").value = "";
   /*1*/ nome = document.getElementById("nomeput").value;
@@ -16,14 +18,17 @@ function create() {
   /*3*/ descri = document.getElementById("descriput").value;
   document.getElementById("descriput").value = "";
   //
+   //arrumar data para padrao br
 
-  const artigo = [titulo, nome, data, descri]
+   datanova = data.split('-').reverse().join('/');
+// jogar tudo num array
+  const artigo = [titulo, nome, datanova, descri];
   arrayGeral.push(artigo);
 
-  
-  // jogar num array geral
-  //arrayGeral.push(arrayComents);
   atualizarListaTela();
+} else{
+  editar(i)
+}
 }
 function atualizarListaTela() {
     let msg = "";
@@ -31,20 +36,16 @@ function atualizarListaTela() {
     console.log(i);
     let tarefa = arrayGeral[i];
     msg += `<div id="comentario">
-    <li id="titulo">Titulo: ${tarefa[0]} </li>  
-    <li id="nome">Nome: ${tarefa[1]} </li> 
-    <li id="data">Data de publicação: ${tarefa[2]} </li> 
-    <li id="descri">Descrição: ${tarefa[3]} </li> 
-    <button type="button" class="btn2" onclick="editar()">Editar</button>
+    <p id="titulo">Titulo: ${tarefa[0]} </p>  
+    <p id="nome">Nome: ${tarefa[1]} </p> 
+    <p id="data">Data de publicação: ${tarefa[2]} </p> 
+    <p id="descri">Descrição: ${tarefa[3]} </p> 
+    <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
     <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
 
   document.getElementById("comentarios").innerHTML = msg;
-  // arrayComents.pop()
-  // arrayComents.pop()
-  // arrayComents.pop()
-  // arrayComents.pop()
 }
 
 
@@ -52,10 +53,10 @@ function apagar(i) {
     msg = arrayGeral.splice(i, 1);
   atualizarListaTela()
 }
-function editar(){
-
-  artigo[0] = document.getElementById("tituput").value;
-  artigo[1]= document.getElementById("nomeput").value;
-  artigo[2] = document.getElementById("dataput").value;
-  artigo[3] = document.getElementById("descriput").value;
+function editar(i){
+    let tarefa = arrayGeral[i];
+    /*0*/ document.getElementById("tituput").value = tarefa[0];
+    /*1*/ document.getElementById("nomeput").value = tarefa[1];
+    /*2*/ document.getElementById("dataput").value = tarefa[2];
+    /*3*/ document.getElementById("descriput").value = tarefa[3];
 }
