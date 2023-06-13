@@ -4,8 +4,10 @@ var titulo;
 var nome;
 var data;
 var descri;
-var msg = "";
 var indice = -1;
+var msg = "";
+
+var tarefa = [];
 
 function create() {
   if (indice < 0) {
@@ -39,7 +41,7 @@ function atualizarListaTela() {
   let msg = "";
   for (let i = 0; i < arrayGeral.length; i++) {
     console.log(i);
-    let tarefa = arrayGeral[i];
+    tarefa = arrayGeral[i];
     msg += `<div id="comentario">
     <p id="titulo">Titulo: ${tarefa[0]} </p>  
     <p id="nome">Nome: ${tarefa[1]} </p> 
@@ -59,11 +61,26 @@ function apagar(i) {
 }
 function editar(i) {
   document.getElementById("comentario").innerHTML = "";
-  document.getElementById("comentario").innerHTML = `<input id="titulo" type="text">
-  <input id="nome" type="text">
-  <input id="data" type="date">
-  <input id="descri" type="text">
+
+  
+  document.getElementById("comentario").innerHTML = `<input id="tituloedit" class="inpututu2" type="text">
+  <input id="nomeedit" class="inpututu2" type="text">
+  <input id="dataedit" class="inpututu2"  type="date">
+  <input id="descriedit" class="inpututu2" type="text">
   <button type="button" class="btn2" onclick="create()">Atualizar</button>
   <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>`;
+
+  document.getElementById("tituloedit").value = tarefa[0];
+  document.getElementById("nomeedit").value = tarefa[1];
+  document.getElementById("dataedit").value = tarefa[2];
+  document.getElementById("descriedit").value = tarefa[3];
+
+    /*0*/ titulo = document.getElementById("tituloedit").value;
+    /*1*/ nome = document.getElementById("nomeedit").value;
+    /*2*/ data = document.getElementById("dataedit").value;
+    /*3*/ descri = document.getElementById("descriedit").value;
+
+    atualizarListaTela()
+
 
 }
