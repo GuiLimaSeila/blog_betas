@@ -8,30 +8,35 @@ var msg = "";
 var indice = -1;
 
 function create() {
-  if (indice < 0){
-  /*0*/ titulo = document.getElementById("tituput").value;
-  document.getElementById("tituput").value = "";
-  /*1*/ nome = document.getElementById("nomeput").value;
-  document.getElementById("nomeput").value = "";
-  /*2*/ data = document.getElementById("dataput").value;
-  document.getElementById("dataput").value = "";
-  /*3*/ descri = document.getElementById("descriput").value;
-  document.getElementById("descriput").value = "";
-  //
-   //arrumar data para padrao br
+  if (indice < 0) {
+    /*0*/ titulo = document.getElementById("tituput").value;
+    document.getElementById("tituput").value = "";
+    /*1*/ nome = document.getElementById("nomeput").value;
+    document.getElementById("nomeput").value = "";
+    /*2*/ data = document.getElementById("dataput").value;
+    document.getElementById("dataput").value = "";
+    /*3*/ descri = document.getElementById("descriput").value;
+    document.getElementById("descriput").value = "";
+    //
+    //arrumar data para padrao br
 
-   datanova = data.split('-').reverse().join('/');
-// jogar tudo num array
-  const artigo = [titulo, nome, datanova, descri];
-  arrayGeral.push(artigo);
+    datanova = data.split("-").reverse().join("/");
+    // jogar tudo num array
+    const artigo = [titulo, nome, datanova, descri];
+    arrayGeral.push(artigo);
+  } else {
+    const artigo = [titulo, nome, datanova, descri];
+    artigo[indice] = artigo;
+
+    indice = -1;
+    
+  }
 
   atualizarListaTela();
-} else{
-  editar(i)
-}
+
 }
 function atualizarListaTela() {
-    let msg = "";
+  let msg = "";
   for (let i = 0; i < arrayGeral.length; i++) {
     console.log(i);
     let tarefa = arrayGeral[i];
@@ -48,15 +53,17 @@ function atualizarListaTela() {
   document.getElementById("comentarios").innerHTML = msg;
 }
 
-
 function apagar(i) {
-    msg = arrayGeral.splice(i, 1);
-  atualizarListaTela()
+  msg = arrayGeral.splice(i, 1);
+  atualizarListaTela();
 }
-function editar(i){
-    let tarefa = arrayGeral[i];
-    /*0*/ document.getElementById("tituput").value = tarefa[0];
-    /*1*/ document.getElementById("nomeput").value = tarefa[1];
-    /*2*/ document.getElementById("dataput").value = tarefa[2];
-    /*3*/ document.getElementById("descriput").value = tarefa[3];
+function editar(i) {
+  document.getElementById("comentario").innerHTML = "";
+  document.getElementById("comentario").innerHTML = `<input id="titulo" type="text">
+  <input id="nome" type="text">
+  <input id="data" type="date">
+  <input id="descri" type="text">
+  <button type="button" class="btn2" onclick="create()">Atualizar</button>
+  <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>`;
+
 }
