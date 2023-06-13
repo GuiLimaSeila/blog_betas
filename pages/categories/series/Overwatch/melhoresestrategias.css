@@ -9,6 +9,7 @@
 body{
     background-color: black;
     color: white;
+    margin: 0;
 }
 #article3{
     text-align: center;
@@ -75,6 +76,9 @@ box-shadow: 5px 5px #76b900;
 
     .slider{
         text-align: center;
+    }
+     img{
+        width: 300px;
     }
 }
 
