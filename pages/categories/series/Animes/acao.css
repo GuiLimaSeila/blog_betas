@@ -367,10 +367,10 @@ span {
 
     }
     .card{
-        margin-top: 200px;
+        margin-top: 300px;
     }
     .card:hover .intro {
-        height: 180px;
+        height: 280px;
         width: 300px;
         bottom: auto;
         background-color: #202020;
