@@ -10,6 +10,7 @@ h1 {
 body {
     background-color: black;
     margin: 0%;
+    width: 100%;
 }
 
 h2 {
@@ -146,8 +147,8 @@ width: 20%;
 
     }
     video {
-        height: 290px;
-        width: 300px;
+        height: 390px;
+        width: 370px;
     }
     #diiii {
 display: none
@@ -162,4 +163,12 @@ display: none
         display: flex;
         margin-left: 10%;
      }
+     p {
+        text-align: center;
+        align-items: center;
+        background-image: url(https://i.pinimg.com/736x/3c/5f/59/3c5f5905d3d5594869a9d814ed4d30fc.jpg);
+        width: 96%;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
 }

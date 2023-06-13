@@ -53,3 +53,27 @@ div {
 .p_image {
     text-align: center;
 }
+@media (max-width: 1000px) {
+    #main_1 {
+        display: contents;
+    }
+    #img_1 {
+        width: 350px;
+        height: auto;
+    }
+    #img_2 {
+        width: 350px;
+        height: auto;
+    }
+    #img_3 {
+        width: 350px;
+        height: auto;
+    }
+    .p_text {
+        font-size: 18px;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+        text-align: center;
+    }
+}

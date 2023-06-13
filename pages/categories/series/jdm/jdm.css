@@ -249,8 +249,22 @@ h2{
   @media (max-width: 1000px) {
     #sectinflex{
       display: contents;
-      margin-left: 140px;
+      margin-left: 0px;
       margin-right: 140px;
+      
+  }
+  .section_card{
+    font-size: 100px;
+    color: #ffffff;
+    background-color: #202020;
+    margin-bottom: 66px ;
+    display: flex;
+    margin-left: 0px;
+    padding: 40px;
+  }
+  .imgdiv2{
+    width: 100px;
+    height: 100px;
   }
   }
   
