@@ -95,7 +95,7 @@ function atualizarEdit() {
     <p id="nome">Nome: ${tarefa[1]} </p> 
     <p id="data">Data de publicação: ${tarefa[2]} </p> 
     <p id="descri">Descrição: ${tarefa[3]} </p> 
-    <p id="titulo">edited</p>
+    <p id="titulo">✎</p>
     <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
     <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
