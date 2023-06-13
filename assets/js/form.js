@@ -101,6 +101,6 @@ function atualizarEdit() {
     <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
-  document.getElementById("comentario").innerHTML = msg;
+  document.getElementById("comentarios").innerHTML = msg;
 }
 
