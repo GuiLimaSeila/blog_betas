@@ -7,6 +7,7 @@
 
 body {
     background-color: black;
+    margin: 0;
 }
 
 h1 {
@@ -66,4 +67,13 @@ h1 {
     box-shadow: 5px 5px #76b900;
     color: white;
     text-align: center;
+}
+@media (max-width: 768px) {
+
+    .article1{
+        margin-top: -100px;
+    }
+    img{
+        width: 300px;
+    }
 }
