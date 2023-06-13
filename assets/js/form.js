@@ -77,10 +77,14 @@ function editar(i) {
 
     /*0*/ titulo = document.getElementById("tituloedit").value;
     /*1*/ nome = document.getElementById("nomeedit").value;
-    /*2*/ data = document.getElementById("dataedit").value;
+    /*2*/ datanova = document.getElementById("dataedit").value;
     /*3*/ descri = document.getElementById("descriedit").value;
 
+     artigo = [titulo, nome, datanova, descri];
+     arrayGeral.push(artigo)
+     atualizarEdit()
 }
+
 function atualizarEdit() {
   msg = "";
   for (let i = 0; i < arrayGeral.length; i++) {
@@ -97,3 +101,4 @@ function atualizarEdit() {
     </div>`;
   }
 }
+
