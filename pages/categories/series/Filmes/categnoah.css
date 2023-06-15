@@ -31,11 +31,12 @@ body {
     padding-right: 10px;
     border-radius: 12px;
 }
-/*Estilização Do quadro do django*/
+/*Estilização Do quadro do django e Clube da luta*/
 #link_django {
     text-decoration: none;
     color: #ffffff;
 }
+/*Estilização  div1 onde tem a sec1 onde tem os quadros do Django e Club da Luta */
 #div1 {
     display: flex;
 }
