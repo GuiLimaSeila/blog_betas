@@ -27,6 +27,19 @@ body {
     width: 200%;
     text-align: left;
 }
+.titulos{
+    text-align: center;
+    margin: 30px;
+}
+#titulop{
+    font-size: 50px;
+}
+#linhass{
+    color: #818181 ;
+    width: 80%;
+    opacity: 0.2;
+}
+
 #tituput{
     height: 30px;
     width: 200px;
@@ -49,6 +62,7 @@ body {
     margin: 20px;
     padding: 30px;
     padding-bottom: 10px;
+    margin-left: 50px;
 }
 
 #principa2 {
@@ -59,14 +73,18 @@ body {
 }
 #comentario{
     margin-bottom: 50px;
+    margin: 30px;
 }
 
 /*botões*/
 .btn {
     transition: all 0.1s ease-in-out;
     font-family: "Dosis", sans-serif;
+    margin-left: 50px;
 }
-
+#edited{
+    font-size: 12px;
+}
 .btn {
     width: 150px;
     height: 60px;
@@ -153,15 +171,17 @@ body {
         border-radius: 36px;
         margin: 20px;
         padding: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         padding-right: 100px;
+        
     }
     #principa2 {
         background-color: #202020;
         border-radius: 36px;
         padding: 30px;
         margin: 20px;
-        padding-right: 50px;
+        padding-right: 60px;
+        width: 60vw;
     }
     #descriput{
         width: 100%;

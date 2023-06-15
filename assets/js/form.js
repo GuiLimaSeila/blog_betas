@@ -1,12 +1,11 @@
 var nome;
-var data = Date.now();
+var data;
 var descri;
 var indice = -1;
 var msg = "";
 
 var arrayGeral = [];
 var edited = [];
-var new1 = [];
 
 function create() {
 
@@ -58,7 +57,6 @@ function atualizarListaTela() {
   for (var i = 0; i < arrayGeral.length; i++) {
    var tarefa = arrayGeral[i];
     msg += `<div id="comentario">
-    <p id="new1">${new1[i] ? "New ★"  : ""}</p>
     <p id="titulo">Titulo: ${tarefa[0]} </p>  
     <p id="nome">Nome: ${tarefa[1]} </p> 
     <p id="data">Data de publicação: ${tarefa[2]} </p> 
@@ -67,12 +65,6 @@ function atualizarListaTela() {
     <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
     <button type="button" class="btn2" onclick="apagar(${i})">Apagar</button>
     </div>`;
-  }
-  if(arrayGeral[0] && arrayGeral[1] && arrayGeral[2]){
-    new1[i] = true;
-    console.log("new" + new1[i]);
-  } else {
-
   }
 
   document.getElementById("comentarios").innerHTML = msg;
