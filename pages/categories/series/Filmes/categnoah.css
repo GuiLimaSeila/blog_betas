@@ -146,9 +146,11 @@ main {
         color: #ffc400;
         font-size: 20px;
     }
+    /*Responividade da primeira sec.*/
     #sec1{
         margin-left: 65px;
     }
+    /*Responividade da segunda sec.*/
     #sec2{
         margin-left: 65px;
     }
