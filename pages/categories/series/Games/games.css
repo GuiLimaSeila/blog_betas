@@ -105,11 +105,14 @@ div {
         width: 100vw;
         height: 40vh;
     }
+    /*Responividade da quinta imagen.*/
     #img_5{
         width: 100vw;
         height: 40vh;
     }
+    /*Responividade do texto.*/
     #p_text{
         text-align: left;
     }
     }
+    /*Fim da Responsividade.*/
