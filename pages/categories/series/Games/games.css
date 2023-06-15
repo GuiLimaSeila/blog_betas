@@ -80,6 +80,7 @@ div {
 .p_image {
     text-align: center;
 }
+/*Responividade da pagina como as div sec e outros itens.*/
 @media (max-width: 1000px) {
     #main_1{
         flex-direction: column;

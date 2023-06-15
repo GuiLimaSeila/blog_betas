@@ -130,7 +130,7 @@ h3 {
 main {
     display: flex;
     margin-left: 22px;
-/*Estilização Da media ou Responividade da pagina como as div sec e outros itens.*/
+/*Responividade da pagina como as div sec e outros itens.*/
 }
 @media (max-width: 1000px) {
     #div1 {
