@@ -1,12 +1,14 @@
 var nome;
 var data;
 var descri;
+
 var indice = -1;
 var msg = "";
 
 var arrayGeral = [];
 
 function create() {
+
   if (indice < 0) {
     var titulo = document.getElementById("tituput").value;
     document.getElementById("tituput").value = "";
@@ -32,6 +34,7 @@ function create() {
 
     indice = -1;
   }
+
 
   atualizarListaTela();
 }
@@ -66,4 +69,5 @@ function editar(i) {
   document.getElementById("descriput").value = tarefa[3];
 
   indice = i;
+
 }
