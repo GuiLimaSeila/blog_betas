@@ -82,6 +82,7 @@ div {
 }
 /*Responividade da pagina como as div sec e outros itens.*/
 @media (max-width: 1000px) {
+    /*Responividade da main */
     #main_1{
         flex-direction: column;
     }
