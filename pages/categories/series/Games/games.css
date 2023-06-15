@@ -86,6 +86,7 @@ div {
     #main_1{
         flex-direction: column;
     }
+    /*Responividade da segunda main*/
     #main_2{
         flex-direction: column;
     }
