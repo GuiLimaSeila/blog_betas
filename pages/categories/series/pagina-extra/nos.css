@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'comic sans ms';
 }
 
 #geral{
@@ -14,9 +14,10 @@
     flex-direction: column;
 }
 img {
-    height: 190px;
+    height: 235px;
     width: 235px;
     margin-left: 5px;
+    margin-top: 15px;
     margin-right: 5px;
     border-radius: 5px;
 }
@@ -38,6 +39,7 @@ h1 {
 }
 h2 {
     color: rgb(127, 255, 172);
+    font-size: 20px;
 }
 #h11 {
     font-size: 60px;
@@ -49,15 +51,15 @@ h2 {
 }
 #dii {
     background-color: rgb(37, 37, 37);
-    width: 370px;
+    width: 500px;
     border-radius: 7px;
     margin-bottom: 1.5%;
     text-align: center;
-    margin-left: 450px;
+    margin-left: 500px;
 }
 #h22 {
     color: rgb(39, 255, 1);
-    margin-left: -40px;
+    margin-left: 0;
 }
 a {
     text-decoration: none;
