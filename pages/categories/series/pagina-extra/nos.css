@@ -80,12 +80,12 @@ a {
     }
     #hh {
         margin-bottom: -3px;
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 35px;
     }
     h2 {
         color: rgb(127, 255, 159);
-        font-size: 30px;
+        font-size: 25px;
     }
     .geral2{
         display: flex;
@@ -94,5 +94,8 @@ a {
     #geral{
         align-items: center;
         display: contents;
+    }
+    section{
+        height: 750px;
     }
 }

@@ -247,7 +247,7 @@ span {
 }
 
 .card:hover .intro {
-    height: 220px;
+    height: 400px;
     bottom: -1630px;
     background-color: #202020;
 }
@@ -382,14 +382,14 @@ padding-left: 15%;
     #h2eqp{
         text-align: center;
         font-size: 50px;
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .slider {
         margin: 0 auto;
         width: 80%;
         height: 450px;
         overflow: hidden;
-        margin-top: -225px;
+        margin-top: 225px;
     }
     .navegation-auto div {
         border: 2px solid #76b900;
@@ -402,7 +402,7 @@ padding-left: 15%;
     .navegation-auto {
         position: absolute;
         width: 80%;
-        margin-top: 410px;
+        margin-top: -410px;
         display: flex;
         justify-content: center;
     }
