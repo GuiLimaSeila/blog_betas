@@ -154,8 +154,10 @@ main {
     #sec2{
         margin-left: 65px;
     }
+    /*Responividade do dj.*/
     #dj {
         color: rgb(184, 7, 184);
         font-size: 20px;
     }
 }
+/*Fim da Responsividade.*/
