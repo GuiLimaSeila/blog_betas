@@ -247,7 +247,7 @@ span {
 }
 
 .card:hover .intro {
-    height: 220px;
+    height: 400px;
     bottom: -1630px;
     background-color: #202020;
 }
