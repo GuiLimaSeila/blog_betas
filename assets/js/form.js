@@ -1,5 +1,5 @@
 var nome;
-var data;
+var data = Date.now();
 var descri;
 var indice = -1;
 var msg = "";
@@ -57,18 +57,18 @@ function atualizarListaTela() {
   for (var i = 0; i < arrayGeral.length; i++) {
    var tarefa = arrayGeral[i];
     msg += `<div id="comentario">
+    <p id="new1">${new[i] ? "Editado ✎"  : ""}</p>
     <p id="titulo">Titulo: ${tarefa[0]} </p>  
     <p id="nome">Nome: ${tarefa[1]} </p> 
     <p id="data">Data de publicação: ${tarefa[2]} </p> 
     <p id="descri">Descrição: ${tarefa[3]} </p>
-    <p id="edited">${edited[i] ? "Editado ✎"  : "Novo"}</p>
+    <p id="edited">${edited[i] ? "Editado ✎"  : ""}</p>
     <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
     <button type="button" class="btn2" onclick="apagar(${i})">Apagar</button>
     </div>`;
   }
 
   document.getElementById("comentarios").innerHTML = msg;
-
 
 }
 
@@ -100,23 +100,5 @@ function editar(i) {
   }
 
 }
-// function atualizarEdited() {
-//   console.log("Entrou no atualizar editando")
 
-//   //função que mostrará a mensagem na tela
-//   var msg = "";
-//   for (var i = 0; i < arrayGeral.length; i++) {
-//    var tarefa = arrayGeral[i];
-//     msg += `<div id="comentario">
-//     <p id="titulo">Titulo: ${tarefa[0]} </p>  
-//     <p id="nome">Nome: ${tarefa[1]} </p> 
-//     <p id="data">Data de publicação: ${tarefa[2]} </p> 
-//     <p id="descri">Descrição: ${tarefa[3]} </p> 
-//     <p id="edited">✎</p>
-//     <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
-//     <button type="button" class="btn2" onclick="apagar(${i})">Apagar</button>
-//     </div>`;
-//   }
-
- 
   
