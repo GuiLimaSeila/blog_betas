@@ -111,18 +111,22 @@ h3 {
 #m {
     color: rgb(233, 143, 64);
 }
+/*Estilização Do nome do filme */
 #c {
     color: rgb(184, 7, 184);
 }
+/*Estilização Do nome do filme */
 #blah {
     color: rgb(235, 135, 5);
     margin-right: 7px;
     margin-bottom: 0%;
 }
+/*Estilização Do nome do filme */
 #runn {
     color: #848fc8;
     margin-bottom: 0%;
 }
+/*Estilização da main*/
 main {
     display: flex;
     margin-left: 22px;
