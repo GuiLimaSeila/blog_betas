@@ -67,7 +67,7 @@ function editar(i) {
   <input id="nomeedit" class="inpututu2" type="text">
   <input id="dataedit" class="inpututu2"  type="date">
   <input id="descriedit" class="inpututu2" type="text">
-  <button type="button" class="btn2" onclick="create()">Atualizar</button>
+  <button type="button" class="btn2" onclick="atualizarEdit()">Atualizar</button>
   <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>`;
 
   document.getElementById("tituloedit").value = tarefa[0];
@@ -77,10 +77,30 @@ function editar(i) {
 
     /*0*/ titulo = document.getElementById("tituloedit").value;
     /*1*/ nome = document.getElementById("nomeedit").value;
-    /*2*/ data = document.getElementById("dataedit").value;
+    /*2*/ datanova = document.getElementById("dataedit").value;
     /*3*/ descri = document.getElementById("descriedit").value;
 
-    atualizarListaTela()
-
-
+     artigo = [titulo, nome, datanova, descri];
+     arrayGeral.push(artigo)
+     atualizarEdit()
 }
+
+function atualizarEdit() {
+  msg = "";
+  for (let i = 0; i < arrayGeral.length; i++) {
+    console.log(i);
+  
+    tarefa = arrayGeral[i];
+    msg += `<div id="comentario">
+    <p id="titulo">Titulo: ${tarefa[0]} </p>  
+    <p id="nome">Nome: ${tarefa[1]} </p> 
+    <p id="data">Data de publicação: ${tarefa[2]} </p> 
+    <p id="descri">Descrição: ${tarefa[3]} </p> 
+    <p id="titulo">✎</p>
+    <button type="button" class="btn2" onclick="editar(${i})">Editar</button>
+    <button type="button" class="btn2"onclick="apagar(${i})">Apagar</button>
+    </div>`;
+  }
+  document.getElementById("comentarios").innerHTML = msg;
+}
+
