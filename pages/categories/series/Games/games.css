@@ -5,9 +5,11 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
+/*Estilização Da div */
 div {
     background-color: #101010;
 }
+/*Estilização Do Titulo da pagina */
 #h1_título {
     text-align: center;
     font-size: 39px;
