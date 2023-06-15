@@ -133,9 +133,11 @@ main {
 /*Responividade da pagina como as div sec e outros itens.*/
 }
 @media (max-width: 1000px) {
+    /*Responividade da primeira div.*/
     #div1 {
         display: contents; 
     }
+    /*Responividade da segunda div.*/
     #div2 {
         display: contents;
     }
