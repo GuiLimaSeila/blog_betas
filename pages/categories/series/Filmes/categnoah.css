@@ -1,22 +1,27 @@
+/*Estilização Da pagina filmes.*/
 body {
     background-color: black;
     margin: 0;
    
 }
+/*Estilização Do texto. */
 #textao {
     color: #ffda35;
     text-align: center;
     margin-top: -205px;
 }
+/*Estilização Do paragrafo.*/
 #textin {
     text-align: center;
     color: #f9f8bf;
 }
+/*Estilização do tamanho das imagens. */
 #ij {
     height: 150px;
     width: 250px;
     border-radius: 5px;
 }
+/*Estilização Da sec1 que tem o filme Django Livre e clube da luta.*/
 #sec1 {
     background-color: #161616;
     width: 250px;
@@ -26,20 +31,25 @@ body {
     padding-right: 10px;
     border-radius: 12px;
 }
+/*Estilização Do quadro do django e Clube da luta.*/
 #link_django {
     text-decoration: none;
     color: #ffffff;
 }
+/*Estilização  div1 onde tem a sec1 onde tem os quadros do Django e Club da Luta. */
 #div1 {
     display: flex;
 }
+/*Estilização Do titulo falando da avaliação do IMDB. */
 h2 {
     text-align: center;
     color: #ffffff;
 }
+/*Estilização Do nome do filme.*/
 #dj {
     color: red;
 }
+/*Estilização Da Idade do Club da Luta.*/
 #ida {
     color: #ffffff;
     background-color: rgb(16, 16, 16);
@@ -48,6 +58,7 @@ h2 {
     margin-left: 106px;
     margin-right: 106px;
 }
+/*Estilização Do sec2 que tem os quadro dos filmes 1917, O Regresso e Blade Runner 2049. */
 #sec2 {
     background-color: #161616;
     width: 250px;
@@ -57,6 +68,7 @@ h2 {
     padding-right: 10px;
     border-radius: 12px;
 }
+/*Estilização Da div2 que tem a sec2 e os quadro dos filmes. */
 #div2 {
     display: flex;
     margin-top: 30px;
@@ -64,6 +76,7 @@ h2 {
 h1 {
     font-size: 50px;
 }
+/*Estilização Da Restrião de idade do Blade Runner 2049. */
 #ida14 {
     color: #ffffff;
     background-color: rgb(211, 99, 18);
@@ -72,6 +85,7 @@ h1 {
     margin-left: 106px;
     margin-right: 106px;
 }
+/*Estilização Da Restrição de idade do O Regresso e Django.*/
 #ida16 {
     color: #ffffff;
     background-color: rgb(201, 1, 1);
@@ -80,6 +94,7 @@ h1 {
     margin-left: 106px;
     margin-right: 106px;
 }
+/*Estilização Do genero de cada filme. */
 h3 {
     color: #feffc4;
 }
@@ -88,47 +103,61 @@ h3 {
     width: 20px;
 
 }
+/*Estilização da cor do nome do filme.*/
 #r {
     color: rgb(114, 114, 244);
 }
+/*Estilização Do nome do filme. */
 #m {
     color: rgb(233, 143, 64);
 }
+/*Estilização Do nome do filme. */
 #c {
     color: rgb(184, 7, 184);
 }
+/*Estilização Do nome do filme. */
 #blah {
     color: rgb(235, 135, 5);
     margin-right: 7px;
     margin-bottom: 0%;
 }
+/*Estilização Do nome do filme. */
 #runn {
     color: #848fc8;
     margin-bottom: 0%;
 }
+/*Estilização da main.*/
 main {
     display: flex;
     margin-left: 22px;
+/*Responividade da pagina como as div sec e outros itens.*/
 }
 @media (max-width: 1000px) {
+    /*Responividade da primeira div.*/
     #div1 {
         display: contents; 
     }
+    /*Responividade da segunda div.*/
     #div2 {
         display: contents;
     }
+    /*Responividade do curb.*/
     #curb {
-        color: #ffd85a;
+        color: #ffc400;
         font-size: 20px;
     }
+    /*Responividade da primeira sec.*/
     #sec1{
         margin-left: 65px;
     }
+    /*Responividade da segunda sec.*/
     #sec2{
         margin-left: 65px;
     }
+    /*Responividade do dj.*/
     #dj {
         color: rgb(184, 7, 184);
         font-size: 20px;
     }
 }
+/*Fim da Responsividade.*/
