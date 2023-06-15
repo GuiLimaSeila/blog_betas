@@ -90,6 +90,7 @@ div {
     #main_2{
         flex-direction: column;
     }
+    /*Responividade da imagen do banner*/
     #img_banner{
         width: 100vw;
         height: 40vh;
