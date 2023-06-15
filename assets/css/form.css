@@ -80,10 +80,6 @@ body {
 .btn {
     transition: all 0.1s ease-in-out;
     font-family: "Dosis", sans-serif;
-    margin-left: 50px;
-}
-#divdobotao{
-    margin-right: 100px;
 }
 #edited{
     font-size: 12px;
@@ -99,6 +95,7 @@ body {
     font-size: 24px;
     color: white;
     margin: 20px;
+    margin-left: 100px;
 
 }
 
