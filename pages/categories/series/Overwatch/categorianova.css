@@ -257,8 +257,12 @@ h2{
     text-align: center;
   }
   .divs{
-    height: 40vh;
+    height: 20vh;
     flex-direction: column;
+  }
+  .imgdiv2{
+    height: 100px;
+    width: 100px;
   }
 }
 
