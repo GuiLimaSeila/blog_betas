@@ -26,10 +26,11 @@ div {
 #img_banner_center {
     text-align: center;
 }
-
+/*Estilização Da main 1*/
 #main_1 {
     display: flex;
 }
+/*Estilização Da main 2*/
 #main_2 {
     display: flex;
 }
