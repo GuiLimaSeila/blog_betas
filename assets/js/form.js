@@ -71,5 +71,9 @@ function editar() {
     /*2*/ datanova = document.getElementById("dataeput").value;
     /*3*/ descri = document.getElementById("descriput").value;
 
+    arrayGeral.push(artigo);
+    const artigo = [titulo, nome, datanova, descri];
+
+    atualizarListaTela()
 }
 
